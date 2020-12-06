@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserInformation">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="50dp"
+
+        android:text="To add profile picture click on profile and select photo"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile"
+        android:src="@drawable/ic_action_name"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/username"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBlack"
+        android:text="Deepak Singh"/>
+
+    <EditText
+        android:id="@+id/inf_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/inf_submit"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+</LinearLayout>

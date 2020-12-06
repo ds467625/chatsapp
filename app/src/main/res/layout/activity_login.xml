@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="enterAlways|scroll"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center"
+        android:text="Welcome to chatsapp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chatsapp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/backgroud_chat"
+        android:layout_gravity="center"/>
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Chatsapp is basic message app you can start your conversation with login/sigup in one tap"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile number"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"/>
+
+
+    <Button
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/submit"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Next" >
+
+    </Button>
+
+</LinearLayout>
